@@ -166,7 +166,7 @@ transform: scale(1.1);
 
 @media(min-width:700px ){
 #cards{
-    max-width: 1700px;
+    max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
 }
