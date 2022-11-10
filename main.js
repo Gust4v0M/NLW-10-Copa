@@ -8,11 +8,10 @@ function createGame(player1, hour, player2) {
 </li>`
 }
 
-let delay = -0.4;
+let delay = -0.4
 
 function createCard(date, day, games) {
-
-delay = delay + 0.4;
+  delay = delay + 0.4
   return `
   <div class="card" style="animation-delay: ${delay}s">
     <h2>${date}<span>${day}</span></h2>
@@ -22,25 +21,25 @@ delay = delay + 0.4;
   </div>`
 }
 
-document.querySelector("#cards").innerHTML = 
-
-
-
-createCard("24/11", "quinta",
- createGame("switzerland", "07:00","cameroon")+
- createGame("portugal", "13:00", "ghana") +
- createGame("brazil", "16:00","servia")
- )+
-createCard("28/11", "segunda",
- createGame("south korea","10:00","ghana" ) + 
- createGame("brazil", "13:00","switzerland") +  
- createGame("portugal", "16:00","uruguay") 
- )+
-createCard("02/12", "sexta", 
- createGame("south korea", "12:00", "portugal" ) +
- createGame("servia", "16:00", "switzerland")  +
- createGame("brazil", "16:00","cameroon")
- )
-
-
-
+document.querySelector("#cards").innerHTML =
+  createCard(
+    "24/11",
+    "quinta",
+    createGame("switzerland", "07:00", "cameroon") +
+      createGame("portugal", "13:00", "ghana") +
+      createGame("Brazil", "16:00", "Servia")
+  ) +
+  createCard(
+    "28/11",
+    "segunda",
+    createGame("south korea", "10:00", "ghana") +
+      createGame("Brazil", "13:00", "switzerland") +
+      createGame("portugal", "16:00", "uruguay")
+  ) +
+  createCard(
+    "02/12",
+    "sexta",
+    createGame("south korea", "12:00", "portugal") +
+      createGame("Servia", "16:00", "switzerland") +
+      createGame("Brazil", "16:00", "cameroon")
+  )
